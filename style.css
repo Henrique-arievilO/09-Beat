@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #75DFF0;
+}
+header{
+    background: linear-gradient(#7206C9 60%, transparent);
+    padding: 1rem 2rem 5rem;
+}
+main{
+    padding: 1rem 2.5rem;
+}
+footer{
+    padding: 5rem 2rem 1rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(transparent, #7206C9 60%);
+}
+.firstNav ul, .secondNav ul, .fourthNav ul{
+    gap: 50px;
+}
+.thirdNav{
+    gap: 10px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+.firstNav li, .fourthNav li{
+    width: 150px;
+}
+.secondNav li{
+    width: 250px;
+}
+.fourthNav a{
+    text-align: right;
+}
+a{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+a:hover{
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #000;
+}
+a:hover img{
+    filter: drop-shadow(2px 2px 2px #000);
+}
+h1, h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+h1{
+    padding-top: 10px;
+}
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: heartBeat 1.5s linear infinite;
+}
+@keyframes heartBeat{
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(.95);
+    }
+}
+.titleContainer img{
+    border: 1px solid #000;
+    height: 300px;
+}
+h2{
+    padding-top: 2rem;
+    text-shadow: 2px 2px 2px #000;
+}
+p{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin: 1rem 0;
+}
+.imageContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px 30px;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+}
+.imageContainer img{
+    width: 600px;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+.imageContainer img:hover{
+    filter: grayscale(0);
+}
+main a{
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
